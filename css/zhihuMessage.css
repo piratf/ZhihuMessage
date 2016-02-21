@@ -1,0 +1,25 @@
+#tabs ul {
+    list-style: none;
+    margin: 0px;
+}
+
+#tabs ul li {
+    float: left;
+}
+
+#ZhihuMessage {
+    width: 300px;
+    height: 400px;
+}
+
+.zm-noti7-content-item {
+    /*height: 3.5em;*/
+}
+
+.unread {
+    background-color: #E3F2FD;
+}
+
+.zg-right {
+    float: right;
+}

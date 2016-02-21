@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <textarea id="code11" style="width: 500px; height: 100px;" rows="5" cols="50" height="100"></textarea>
+        <br />
+        <input onclick="bianma()" type="button" value="编码" />&nbsp;
+        <input onclick="jiema()" type="button" value="解码" />
+        <br />
+        <textarea id="code12" style="width: 500px; height: 100px;" rows="5" cols="50"></textarea>
+    </p>
+</body>
+<script type="text/javascript">
+// <![CDATA[
+var decToHex = function(str) {
+    var res = [];
+    for (var i = 0; i < str.length; i++)
+        res[i] = ("00" + str.charCodeAt(i).toString(16)).slice(-4);
+    return "\\u" + res.join("\\u");
+}
+var hexToDec = function(str) {
+    str = str.replace(/\\/g, "%");
+    return unescape(str);
+}
+var bianma = function() {
+    document.getElementById('code12').value = decToHex(document.getElementById('code11').value);
+}
+var jiema = function() {
+        document.getElementById('code12').value = hexToDec(document.getElementById('code11').value);
+    }
+    // ]]>
+</script>
+
+</html>

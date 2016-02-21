@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- thank for this tutorial -->
+<!-- http://www.html5rocks.com/en/tutorials/cors/ -->
+<!-- Author: piratf -->
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/zui.min.css">
+    <link rel="stylesheet" href="css/zhihuMessage.css">
+    <title>My Popup page</title>
+</head>
+
+<body>
+    <div class="example" id="ZhihuMessage">
+        <ul id="myTab" class="nav nav-tabs">
+            <li class="active">
+                <a href="#notice" data-toggle="tab">消息</a>
+            </li>
+            <li class>
+                <a href="#follow" data-toggle="tab">关注</a>
+            </li>
+            <li class>
+                <a href="#vote_thank" data-toggle="tab">点赞和感谢</a>
+            </li>
+            <li class>
+                <a href="https://www.zhihu.com/inbox" data-toggle="tab">私信</a>
+            </li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="notice">
+                <i class="icon icon-spin icon-spinner-snake"></i>
+                <span>加载中</span>
+            </div>
+            <div class="tab-pane" id="follow">
+                
+            </div>
+            <div class="tab-pane" id="vote_thank">
+                
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/zui.min.js"></script>
+<script src="js/getNotice.js"></script>
+
+</html>
