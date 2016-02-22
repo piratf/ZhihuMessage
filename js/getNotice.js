@@ -148,6 +148,7 @@ function parseZhihuVoteThank(htmlDOM) {
 
 // 向 zhihu.com 发送请求，获取信息的主函数
 function getNotice() {
+    console.log("contentMe: piratf.me@gmail.com")
     var timestamp = new Date().getTime();
     var argument = { r: timestamp };
     var targetLink_default = "https://www.zhihu.com/noti7/stack/default";
