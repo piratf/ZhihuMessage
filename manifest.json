@@ -5,13 +5,20 @@
     "description": "This extension shows your messages from www.zhihu.com",
     "version": "0.1",
 
+    "icons": {
+        "19": "icon19.png",
+        "32": "icon32.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+
     "background": {
         "scripts": ["js/eventPage.js"],
         "persistent": false
     },
 
     "browser_action": {
-        "default_icon": "icon2.png",
+        "default_icon": "icon19.png",
         "default_popup": "myPopUp.html",
         // this line change the content of help infomation when mouse hover on our icon
         "default_title": "Click to load your messages"
