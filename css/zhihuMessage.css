@@ -1,19 +1,11 @@
-#tabs ul {
-    list-style: none;
-    margin: 0px;
-}
-
-#tabs ul li {
-    float: left;
-}
-
 #ZhihuMessage {
     width: 300px;
     height: 400px;
 }
 
-.zm-noti7-content-item {
-    /*height: 3.5em;*/
+#waiting {
+    padding-top: 50%;
+    text-align: center;
 }
 
 .unread {
@@ -22,4 +14,22 @@
 
 .zg-right {
     float: right;
+}
+
+
+/*链接*/
+a:link {
+    color: #259;
+}
+
+a:visited {
+    color: #259;
+}
+
+a:hover {
+    color: #259;
+}
+
+a:active {
+    color: #259;
 }

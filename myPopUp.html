@@ -24,25 +24,47 @@
                 <a href="#vote_thank" data-toggle="tab">点赞和感谢</a>
             </li>
             <li class>
-                <a href="https://www.zhihu.com/inbox" data-toggle="tab">私信</a>
+                <a id="mail" href="https://www.zhihu.com/inbox" data-toggle="tab">私信</a>
             </li>
         </ul>
         <div class="tab-content">
-            <div class="tab-pane active" id="notice">
-                <i class="icon icon-spin icon-spinner-snake"></i>
-                <span>加载中</span>
+            <div id="notice" class="list list-condensed tab-pane active">
+                <header>
+                    <!-- <h3><i class="icon-list-ul icon-border-circle"></i> 消息 &nbsp;</h3> -->
+                </header>
+                <section id="noticeSection" class="items items-hover">
+                    <div id="waiting"><i class="icon icon-spin icon-spinner-snake"></i>&nbsp;加载中
+                    </div>
+                    <!-- item start here -->
+                </section>
+                <footer>
+                </footer>
             </div>
-            <div class="tab-pane" id="follow">
-                
+            <div id="follow" class="list list-condensed tab-pane">
+                <header>
+                    <!-- <h3><i class="icon-list-ul icon-border-circle"></i> 消息 &nbsp;</h3> -->
+                </header>
+                <section id="followSection" class="items items-hover">
+                    <!-- item start here -->
+                </section>
+                <footer>
+                </footer>
             </div>
-            <div class="tab-pane" id="vote_thank">
-                
+            <div id="vote_thank" class="list list-condensed tab-pane">
+                <header>
+                    <!-- <h3><i class="icon-list-ul icon-border-circle"></i> 消息 &nbsp;</h3> -->
+                </header>
+                <section id="voteThankSection" class="items items-hover">
+                    <!-- item start here -->
+                </section>
+                <footer>
+                </footer>
             </div>
         </div>
     </div>
 </body>
 <script src="js/jquery-1.11.3.min.js"></script>
-<script src="js/zui.min.js"></script>
+<script src="js/zui.lite.min.js"></script>
 <script src="js/getNotice.js"></script>
 
 </html>
