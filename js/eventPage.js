@@ -36,9 +36,9 @@ function parseZhihuMessage(alarm) {
 
         // 有新消息
         if (msgCntSum > 0) {
-            chrome.browserAction.setIcon({path: "./icon3.png"})
+            chrome.browserAction.setIcon({path: "./newMessageIcon19.png"})
         } else {
-            chrome.browserAction.setIcon({path: "./icon2.png"})
+            chrome.browserAction.setIcon({path: "./icon19.png"})
         }
     });
 }
